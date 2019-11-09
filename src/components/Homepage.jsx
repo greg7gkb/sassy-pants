@@ -35,7 +35,7 @@ export default class Homepage extends React.Component {
   renderUser(user) {
     const url = "https://" + user.website;
     return (
-      <p>
+      <p key={user.id}>
         {user.name}, <a href={url}>{user.website}</a>
       </p>
     );
